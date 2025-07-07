@@ -24,7 +24,7 @@ void main() {
 
     color *= exposure;
     color = max(vec3(0.0), color - vec3(0.004));
-    color = (color * (vec3(6.2) * color + vec3(0.5))) / (color * (vec3(6.2) * color + vec3(1.7)) + vec3(0.06));
+    //color = (color * (vec3(6.2) * color + vec3(0.5))) / (color * (vec3(6.2) * color + vec3(1.7)) + vec3(0.06));
 
 #ifdef USE_SDR_LUT
     vec3 lut_size = vec3(textureSize(sdr_lut, 0));
