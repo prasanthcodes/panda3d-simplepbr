@@ -90,3 +90,6 @@ simplepbr-max-lights 8
 `sdr_lut_factor`
 : Factor (from 0.0 to 1.0) for how much of the LUT color to mix in, defaults to 1.0
 
+`applyToneMapping`
+: Enable ToneMapping, defaults to `True`
+
