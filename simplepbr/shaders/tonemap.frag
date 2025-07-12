@@ -11,7 +11,10 @@ uniform sampler2D tex;
     uniform float sdr_lut_factor;
 #endif
 uniform float exposure;
+<<<<<<< HEAD
 uniform bool applyToneMapping;
+=======
+>>>>>>> 33f7b5b8dcd1608b85052fa174593db0bfe79855
 
 varying vec2 v_texcoord;
 
@@ -25,9 +28,13 @@ void main() {
 
     color *= exposure;
     color = max(vec3(0.0), color - vec3(0.004));
+<<<<<<< HEAD
 	if (applyToneMapping){
 		color = (color * (vec3(6.2) * color + vec3(0.5))) / (color * (vec3(6.2) * color + vec3(1.7)) + vec3(0.06));
 	}
+=======
+    //color = (color * (vec3(6.2) * color + vec3(0.5))) / (color * (vec3(6.2) * color + vec3(1.7)) + vec3(0.06));
+>>>>>>> 33f7b5b8dcd1608b85052fa174593db0bfe79855
 
 #ifdef USE_SDR_LUT
     vec3 lut_size = vec3(textureSize(sdr_lut, 0));
